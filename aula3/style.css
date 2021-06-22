@@ -1,0 +1,22 @@
+body,html,#fundo{
+    height: 100%;
+}
+#menina{
+    width: 200px;
+    position: absolute;
+    top: 0;
+}
+#girl{
+    animation: fly 3s infinite ease-in;
+    width: 100px;
+    margin-top: 50px;
+}
+@keyframes fly{
+    50%{
+        transform: translate(50vw,60px)
+    }
+    100%{
+        transform: translate(calc(100vw - 150px), 0px);
+    }
+}
+

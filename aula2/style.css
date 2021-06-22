@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+#box{
+    animation: girar 1.5s 1 alternate;
+    margin-top: 30vh;
+    height: 250px;
+    width: 250px;
+    background-color:  #4081F6;
+    transition-property: background-color,border-radius;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#box:hover{
+    border-radius: 50%;
+    background-color: #40F6A6;
+}
+@keyframes girar{
+    0%
+    {
+        transform: scale(0.9);
+    }
+    50%{
+        border-radius: 0 50% 0 50%;
+        transform: rotate(0.5turn);
+    }
+    100%{
+        border-radius: 50%;
+        background-color: #37D4BB;
+        transform: rotate(1turn);
+    }
+}
